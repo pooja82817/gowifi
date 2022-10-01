@@ -1,0 +1,54 @@
+<main>
+    <img src="assets/image/img.jpg" alt="" class="bg">
+    <div class="landing">
+        <div class="top">
+            <p>WIRELESS <br> MOBILE INTERNET</p>
+            <p>WE GO WITH YOU!</p>
+        </div> 
+        <div class="buttom">
+            <div class="right">
+                <p>EXCLUSIVE MEMBERSHIP</p>
+                <p>BY REFERRAL ONLY - STARTING JAN 31ST</p>
+            </div>
+            <button>REQUEST TO BE A MEMBER <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <section class="first" >
+        <p class="heading">HOW DO  I GET  STARTED?</p>
+        <div class="cards">
+            <div *ngFor="let item of cards; let i = index" class="card">
+                <div class="icons">
+                    <p>{{i+1}}</p>
+                    <p [ngStyle]="{'color':item.color}" [innerHTML]="item.icon" ></p>
+                </div>
+                <p class="cardAbout">{{item.about}}</p>
+            </div>
+        </div>
+    </section>
+    <section class="second">
+        <div class="sectionAbout">
+            <p class="heading" >WHY IS THERE A MEMBERSHIP?</p>
+            <p class="sectionAboutText" >It is our mission to service a smaller community of wireless mobile internet users with the best communication and service as possible. We are looking for a community of users that want to work together, that understand this industry is changing daily and can be responsible dala users! With our membership process we will do our do diligence to maintain a community of data users with fair prices, informative updales, shared knowledge base and live forums for community interaction.</p>
+        </div>
+        <img src="assets/image/1st image.jpg" alt="">
+    </section>
+    <section class="third">
+        <img src="assets/image/2nd image.jpg" alt="">
+        <div class="sectionAbout">
+            <p class="heading">IS THIS SERVICE FOR EVERYONE?</p>
+            <p class="sectionAboutText">
+                No. We are looking for responsible data users. We do not want users that download large amounts of torrents, abuse streaming limits, use TB's of data per month, game several hours a day or would be considered "couch potatoes".
+            </p>
+            <hr>
+            <p class="heading">DO I HAVE TO SIGN A CONTRACT OR DO A CREDIT CHECK?</p>
+            <p class="sectionAboutText">No. No. There is no contact term . There is no credit check</p>
+        </div>
+    </section>
+    <section class="fourth">
+        <div class="sectionAbout">
+            <p class="heading">How Long IS MY MEMBERSHIP FOR?</p>
+            <p class="sectionAboutText">There are three options for membership. Month to Month , 3 month or 6 month</p>
+        </div>
+        <img src="assets/image/3rd image.jpg" alt="">
+    </section>
+</main>
