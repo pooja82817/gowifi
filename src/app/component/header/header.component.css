@@ -29,9 +29,13 @@ nav p{
 nav .links{
     display: flex;
     margin-left: 20px;
+    cursor: pointer;
 }
 .links p{
     margin:0 10px;
+}
+nav .join{
+    cursor: pointer;
 }
 
 
